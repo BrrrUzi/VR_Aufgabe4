@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
+    public float senitivity = 2f;
     public Transform orientation;
-    float xRot;
-    float yRot;
+    float camVerticalRotation = 0;
+    float camHorizontalRotation = 2;
+  
 
     private void Start()
     {
@@ -18,19 +18,21 @@ public class PlayerCam : MonoBehaviour
 
     private void FixedUpdate()
     {   
-        //Input der Maus X-Achse
-        float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
-        //Input der Maus Y-Achse
-        float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
+        //Inputs
+        float mouseX = Input.GetAxisRaw("Mouse X") * senitivity ;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * senitivity ;
 
-        yRot += mouseX;
-        xRot += mouseY;
+
+        camVerticalRotation -= mouseY;
+        camHorizontalRotation -= mouseX;
         //damit man auf der X-Achse nicht um den körper drehen kann
-        xRot = Mathf.Clamp(xRot, sensX - 90f, 90f);
-
+        camVerticalRotation = Mathf.Clamp(camVerticalRotation, -90f, 90f);
         //Cam orientation und Rotation
-        transform.rotation = Quaternion.Euler(xRot, yRot, 0);
-        orientation.rotation = Quaternion.Euler(0, yRot, 0);
+        transform.localEulerAngles = Vector3.right * camVerticalRotation;
+        transform.localEulerAngles = Vector3.right * camHorizontalRotation;
+
+        //camHorizontalRotation -= mouseX;
+        camVerticalRotation -= mouseY;
 
     }
 }
