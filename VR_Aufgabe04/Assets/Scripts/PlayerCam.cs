@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,34 +6,31 @@ using UnityEngine;
 public class PlayerCam : MonoBehaviour
 {
     public float senitivity = 2f;
-    public Transform orientation;
-    float camVerticalRotation = 0;
-    float camHorizontalRotation = 2;
+    public Transform player;
+    float camVerticalRotation = 0f;
+    
   
 
-    private void Start()
-    {
+    void Start()
+    {   
+        //Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
     }
 
-    private void FixedUpdate()
+    void Update()
     {   
         //Inputs
-        float mouseX = Input.GetAxisRaw("Mouse X") * senitivity ;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * senitivity ;
-
+        float mouseX = Input.GetAxisRaw("Mouse X") * senitivity * Time.deltaTime;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * senitivity * Time.deltaTime;
 
         camVerticalRotation -= mouseY;
-        camHorizontalRotation -= mouseX;
-        //damit man auf der X-Achse nicht um den körper drehen kann
-        camVerticalRotation = Mathf.Clamp(camVerticalRotation, -90f, 90f);
-        //Cam orientation und Rotation
-        transform.localEulerAngles = Vector3.right * camVerticalRotation;
-        transform.localEulerAngles = Vector3.right * camHorizontalRotation;
 
-        //camHorizontalRotation -= mouseX;
-        camVerticalRotation -= mouseY;
+        camVerticalRotation = Mathf.Clamp(camVerticalRotation, -60f, 60);
+        transform.localRotation = Quaternion.Euler(camVerticalRotation, 0f, 0f);
+
+        player.Rotate(Vector3.up * mouseX) ;
+
 
     }
 }
