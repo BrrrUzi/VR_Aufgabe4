@@ -9,6 +9,7 @@ public class LineForce : MonoBehaviour
 
     private void Update()
     {
+        
         Vector3? worldPoint = CastMouseClickRay();
         if (!worldPoint.HasValue)
         {
