@@ -346,15 +346,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Bahn1.cs"
-"Assets/Scripts/BallLinie.cs"
+"Assets/Scripts/Ball/BallController.cs"
+"Assets/Scripts/Ball/BallLinie.cs"
+"Assets/Scripts/Ball/LineForce.cs"
 "Assets/Scripts/CameraSwitcher.cs"
-"Assets/Scripts/LineForce.cs"
 "Assets/Scripts/Player/PlayerCam.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 "Assets/Scripts/Player/PlayerTeleport.cs"
-"Assets/Scripts/Portal.cs"
+"Assets/Scripts/Portale/Portal.cs"
+"Assets/Scripts/Portale/Teleporter1.cs"
 "Assets/Scripts/ScriptGroupController.cs"
-"Assets/Scripts/Teleporter1.cs"
 -langversion:9.0
 
 /deterministic

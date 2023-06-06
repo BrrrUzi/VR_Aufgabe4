@@ -2,39 +2,48 @@ using UnityEngine;
 
 public class CameraSwitcher : MonoBehaviour
 {
-    public Camera camera1;
-    public Camera camera2;
+    public Camera[] cameras;
+    public ScriptGroupController[] scriptControllers;
 
-    private bool isFirstPerson = true;
-
-    public ScriptGroupController scriptGroupController; // Referenz auf das ScriptGroupController-Skript
+    private int currentCameraIndex = 0;
 
     void Start()
     {
-        scriptGroupController.DisableScripts();
-        camera1.enabled = true;
-        camera2.enabled = false;
+        // Aktiviere die erste Kamera und die zugehörigen Skriptgruppe
+        SetCameraActive(currentCameraIndex);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            isFirstPerson = !isFirstPerson;
+            // Deaktiviere die aktuelle Kamera und die zugehörige Skriptgruppe
+            SetCameraActive(currentCameraIndex, false);
 
-            if (isFirstPerson)
-            {
-                camera1.enabled = true;
-                camera2.enabled = false;
-            }
-            else
-            {
-                camera1.enabled = false;
-                camera2.enabled = true;
+            // Inkrementiere den Kamera-Index
+            currentCameraIndex = (currentCameraIndex + 1) % cameras.Length;
 
-                // Rufe die EnableScripts()-Methode des ScriptGroupController-Skripts auf
-                scriptGroupController.EnableScripts();
-            }
+            // Aktiviere die neue Kamera und die zugehörige Skriptgruppe
+            SetCameraActive(currentCameraIndex);
+        }
+    }
+
+    private void SetCameraActive(int cameraIndex, bool activateScripts = true)
+    {
+        // Aktiviere die gewünschte Kamera
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].enabled = (i == cameraIndex);
+        }
+
+        // Aktiviere/deaktiviere die Skriptgruppe der gewünschten Kamera
+        if (activateScripts)
+        {
+            scriptControllers[cameraIndex].EnableScripts();
+        }
+        else
+        {
+            scriptControllers[cameraIndex].DisableScripts();
         }
     }
 }
