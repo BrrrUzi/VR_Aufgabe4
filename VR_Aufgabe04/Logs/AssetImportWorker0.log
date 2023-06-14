@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49189
+54582
 Successfully changed project path to: /Users/patrick/git/VR_Aufgabe4/VR_Aufgabe04
 /Users/patrick/git/VR_Aufgabe4/VR_Aufgabe04
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,11 +54,11 @@ Successfully changed project path to: /Users/patrick/git/VR_Aufgabe4/VR_Aufgabe0
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8240487936] Host "[IP] 192.168.178.21 [Port] 0 [Flags] 2 [Guid] 2102470416 [EditorId] 2102470416 [Version] 1048832 [Id] OSXEditor(0,Patricks-MacBook.fritz.box) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8240487936] Host "[IP] 192.168.178.21 [Port] 0 [Flags] 2 [Guid] 538832527 [EditorId] 538832527 [Version] 1048832 [Id] OSXEditor(0,Patricks-MacBook.fritz.box) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8240487936] Host "[IP] 192.168.178.21 [Port] 0 [Flags] 2 [Guid] 2102470416 [EditorId] 2102470416 [Version] 1048832 [Id] OSXEditor(0,Patricks-MacBook.fritz.box) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8240487936] Host "[IP] 192.168.178.21 [Port] 0 [Flags] 2 [Guid] 538832527 [EditorId] 538832527 [Version] 1048832 [Id] OSXEditor(0,Patricks-MacBook.fritz.box) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 60.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 59.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -73,77 +73,77 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.24f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000663 seconds.
+Registered in 0.000555 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 62.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.372 seconds
+- Completed reload, in  0.359 seconds
 Domain Reload Profiling:
-	ReloadAssembly (372ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (359ms)
+		BeginReloadAssembly (38ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (280ms)
-			LoadAssemblies (39ms)
+		EndReloadAssembly (270ms)
+			LoadAssemblies (37ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (65ms)
+			SetupTypeCache (62ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (171ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (166ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (62ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (81ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001603 seconds.
+Registered in 0.001264 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/patrick/git/VR_Aufgabe4/VR_Aufgabe04/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/patrick/git/VR_Aufgabe4/VR_Aufgabe04/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.547 seconds
+- Completed reload, in  0.565 seconds
 Domain Reload Profiling:
-	ReloadAssembly (548ms)
+	ReloadAssembly (565ms)
 		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (427ms)
+		EndReloadAssembly (447ms)
 			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (157ms)
+			SetupTypeCache (161ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (187ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (197ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (124ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (132ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
@@ -154,12 +154,12 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.24f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3058 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (84.7 KB). Loaded Objects now: 3541.
-Memory consumption went from 115.0 MB to 114.9 MB.
-Total: 2.079416 ms (FindLiveObjects: 0.095917 ms CreateObjectMapping: 0.033334 ms MarkObjects: 1.882875 ms  DeleteObjects: 0.066625 ms)
+Unloading 24 unused Assets / (Unknown). Loaded Objects now: 3541.
+Memory consumption went from 115.0 MB to 115.0 MB.
+Total: 2.048000 ms (FindLiveObjects: 0.108125 ms CreateObjectMapping: 0.034958 ms MarkObjects: 1.841167 ms  DeleteObjects: 0.063208 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -173,13 +173,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 281472.609071 seconds.
-  path: Assets/Maps u. Objects/LowPolyTree.fbx
-  artifactKey: Guid(30b21697919f244888d93a3668d7906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Maps u. Objects/LowPolyTree.fbx using Guid(30b21697919f244888d93a3668d7906e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71381564c23c05aca6832ecc5d5631f8') in 0.140760 seconds 
+  Time since last request: 326291.835052 seconds.
+  path: Assets/Materials/Materials/wood.mat
+  artifactKey: Guid(94535e5e1452d4cac8c1a781ff8e4bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/wood.mat using Guid(94535e5e1452d4cac8c1a781ff8e4bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0023c81bcc42410af8d6e1da1cfb54e9') in 0.100576 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 99.404265 seconds.
-  path: Assets/Maps u. Objects/LowPolyTree 1.fbx
-  artifactKey: Guid(78da0731c369d4715a03142aff1cb712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Maps u. Objects/LowPolyTree 1.fbx using Guid(78da0731c369d4715a03142aff1cb712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c7985b13d71b2b2512c1c4cb3fec48') in 0.051289 seconds 
+  Time since last request: 177.115149 seconds.
+  path: Assets/Materials/Materials/wood.mat
+  artifactKey: Guid(94535e5e1452d4cac8c1a781ff8e4bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/wood.mat using Guid(94535e5e1452d4cac8c1a781ff8e4bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c786e493162012fb2fc85ae6d9499344') in 0.005985 seconds 
