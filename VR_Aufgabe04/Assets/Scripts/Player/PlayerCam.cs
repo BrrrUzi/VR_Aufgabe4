@@ -22,7 +22,7 @@ public class PlayerCam : MonoBehaviour
 
     void Start()
     {
-        cameraDirection = cam.transform.localPosition.normalized;
+        //cameraDirection = cam.transform.localPosition.normalized;
         camDistance = cameraDistanceMinMax.y;
 
 
