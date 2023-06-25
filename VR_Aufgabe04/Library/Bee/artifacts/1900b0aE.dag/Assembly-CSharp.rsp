@@ -378,11 +378,13 @@
 "Assets/Scripts/Ball/BallLinie.cs"
 "Assets/Scripts/Ball/LineForce.cs"
 "Assets/Scripts/CameraSwitcher.cs"
+"Assets/Scripts/FadeScreen.cs"
 "Assets/Scripts/Player/PlayerCam.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 "Assets/Scripts/Player/PlayerTeleport.cs"
 "Assets/Scripts/Portale/Portal.cs"
 "Assets/Scripts/Portale/Teleporter1.cs"
+"Assets/Scripts/SceneTransitionManager.cs"
 "Assets/Scripts/Schlagzähler.cs"
 "Assets/Scripts/ScriptGroupController.cs"
 -langversion:9.0
