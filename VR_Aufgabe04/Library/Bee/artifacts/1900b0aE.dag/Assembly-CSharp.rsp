@@ -373,8 +373,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
-"Assets/Scripts/Ball/BallController.cs"
+"Assets/Scripts/Ball/Schlagzaehler.cs"
 "Assets/Scripts/OldScripts/Bahn1.cs"
+"Assets/Scripts/OldScripts/BallController.cs"
 "Assets/Scripts/OldScripts/BallLinie.cs"
 "Assets/Scripts/OldScripts/CameraSwitcher.cs"
 "Assets/Scripts/OldScripts/LineForce.cs"
@@ -386,7 +387,6 @@
 "Assets/Scripts/Player/PlayerTeleport.cs"
 "Assets/Scripts/ScenenWechsel/FadeScreen.cs"
 "Assets/Scripts/ScenenWechsel/SceneTransitionManager.cs"
-"Assets/Scripts/Schlagzähler.cs"
 -langversion:9.0
 
 /deterministic

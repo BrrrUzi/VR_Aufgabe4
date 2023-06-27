@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Schlagzähler : MonoBehaviour
+public class Schlagzaehler : MonoBehaviour
 {
 
     [SerializeField]
@@ -17,7 +17,8 @@ public class Schlagzähler : MonoBehaviour
     private int i = 0;
 
     private Rigidbody rb;
-
+    [SerializeField]
+    public AudioSource schlagSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,8 @@ public class Schlagzähler : MonoBehaviour
         if (col.gameObject.CompareTag("Club")) {
             zaehler++;
             setZaehlerText();
+            schlagSound.Play();
+
         }
         else if (col.gameObject.CompareTag("Loch")) {
             if (zaehler < highscore) {
