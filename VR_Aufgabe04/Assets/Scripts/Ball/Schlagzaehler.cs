@@ -58,7 +58,7 @@ public class Schlagzaehler : MonoBehaviour
 
 
     private void setZaehlerText() {
-        zaehlerText.text = "Schläge: " + zaehler;
+        zaehlerText.text = "Gesamtschläge: " + zaehler;
     }
 
     private void setHighScoreText() {
