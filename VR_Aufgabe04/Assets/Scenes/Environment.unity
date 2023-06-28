@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.1341472, b: 0.121078566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9481,6 +9481,104 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 30b21697919f244888d93a3668d7906e, type: 3}
   m_PrefabInstance: {fileID: 1216701533}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1246814748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246814749}
+  - component: {fileID: 1246814752}
+  - component: {fileID: 1246814751}
+  - component: {fileID: 1246814750}
+  m_Layer: 0
+  m_Name: Loch
+  m_TagString: Loch
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246814749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246814748}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.000156, y: 0.046139, z: -0.000474}
+  m_LocalScale: {x: 0.0002088499, y: 0.00020884998, z: 0.00020884998}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 468906435}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!64 &1246814750
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246814748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1246814751
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246814748}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1246814752
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246814748}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1249172923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9770,6 +9868,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00641fdee89a849f7ae3ccf8c260fdc0, type: 2}
+    - target: {fileID: 4767400413853537203, guid: 5da177c66149b4a438b7322364f6ef91, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     - target: {fileID: 4767400413853537203, guid: 5da177c66149b4a438b7322364f6ef91, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -10785,9 +10887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee728637df0584278be4c41e2675b36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  schlagSound: {fileID: 1826746165}
   zaehlerText: {fileID: 137975154}
   highScoreText: {fileID: 1981295870}
-  schlagSound: {fileID: 1826746165}
+  schilder: []
+  anzahlBahnen: 18
 --- !u!1001 &1416278802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11239,6 +11343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468906435}
     m_Modifications:
+    - target: {fileID: 1627646014691488895, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
+      propertyPath: m_Name
+      value: "HighscoreZ\xE4hler"
+      objectReference: {fileID: 0}
     - target: {fileID: 7185441427827441433, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11298,6 +11406,14 @@ PrefabInstance:
     - target: {fileID: 7223045468490639852, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
       propertyPath: m_text
       value: Bahn 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223045468490639854, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
+      propertyPath: m_Name
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223045469123356224, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
+      propertyPath: m_Name
+      value: SchlaegeZaehler
       objectReference: {fileID: 0}
     - target: {fileID: 7564921766380299683, guid: 995477f0feeeda046a2f40f9faed72fd, type: 3}
       propertyPath: m_Name

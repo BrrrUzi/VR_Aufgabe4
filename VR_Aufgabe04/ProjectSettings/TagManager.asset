@@ -7,6 +7,7 @@ TagManager:
   - Ball
   - Club
   - Loch
+  - Grass
   layers:
   - Default
   - TransparentFX
