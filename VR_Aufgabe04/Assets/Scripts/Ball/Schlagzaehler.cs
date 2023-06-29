@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-struct Bahn {
-    public Vector3 bahnOrigin;
-    public BahnSchild schild;
-}
-
 
 
 public class Schlagzaehler : MonoBehaviour
@@ -25,20 +20,16 @@ public class Schlagzaehler : MonoBehaviour
     [SerializeField]
     public TextMeshPro highScoreText;
 
-    // Liste aller Schilder des Parcours, die zu einer Bahn gehören
+    // Liste aller Bahnen des Parcours
     [SerializeField]
-    public BahnSchild[] schilder;
-
-    // Angabe über Anzahl aller Bahnen dieses Parcours
-    [SerializeField]
-    public int anzahlBahnen;
+    public Bahn[] bahnen;
 
 
     // Zähler aller Schläge auf dem Parcours seit Start des Spiels
-    private int zaehler = 0;
+    private int globalZaehler = 0;
 
     // Highscore aller bisher beendeten Spiele auf diesem Parcours seit Installation des Spiels
-    private int highscore = 0;
+    private int globalHighscore = 0;
 
 
 
@@ -46,7 +37,8 @@ public class Schlagzaehler : MonoBehaviour
     private int currentBahn = 0;
 
     // Speicherung des Schilds und der Startposition zu jeder Bahn
-    private Dictionary<int, Bahn> bahnen = new Dictionary<int, Bahn>();
+    //[SerializeField]
+    //private Dictionary<int, Bahn> bahnen = new Dictionary<int, Bahn>();
 
     // Rigidbody des Balls
     private Rigidbody rb;
@@ -55,22 +47,15 @@ public class Schlagzaehler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 1; i <= schilder.Length; i++) {
-            Bahn bahn = new Bahn();
-            bahn.schild = schilder[i - 1];
-            bahnen[i] = bahn;
-        }
-
-        Bahn b = bahnen[1];
+        Bahn b = bahnen[0];
         b.bahnOrigin = new Vector3(-25.27F, 0.35F, 23.88F);
-        bahnen[1] = b;
+        bahnen[0] = b;
 
         // Befülle origins mit den jeweiligen Startpositionen des Balls.
         // ...                                                                                                                  // ToDo
 
-
         // Lade den Highscore auf dieser Map
-        highscore = PlayerPrefs.GetInt("GesamtHighscore");
+        globalHighscore = PlayerPrefs.GetInt("GesamtHighscore");
 
         // Setze die Texte auf dem Gesamt Schild
         setZaehlerText();
@@ -81,8 +66,7 @@ public class Schlagzaehler : MonoBehaviour
 
 
         // Teleport Ball zur ersten Bahn
-        transform.position = bahnen[1].bahnOrigin;
-        currentBahn++;
+        transform.position = bahnen[0].bahnOrigin;
     }
 
     // Update is called once per frame
@@ -100,7 +84,7 @@ public class Schlagzaehler : MonoBehaviour
             schlagSound.Play();
             
             // Zähle einen neuen Schlag auf dem Schild mit der Gesamtübersicht
-            zaehler++;
+            globalZaehler++;
             setZaehlerText();
 
             // Zähle einen neuen Schlag auf dieser Bahn auf dem spezifischen BahnSchild
@@ -116,17 +100,17 @@ public class Schlagzaehler : MonoBehaviour
             // Setze ggf. den Highscore neu
             bahnen[currentBahn].schild.updateHighscore();
 
-            if (currentBahn < anzahlBahnen) {
+            if (currentBahn < bahnen.Length - 1) {
                 currentBahn++;
 
                 // Teleport Ball zur nächsten Bahn
                 transform.position = bahnen[currentBahn].bahnOrigin;
-            }else {
+            } else {
                 // Setze den Highscore auf dem Schild mit der Gesamtübersich
-                if (zaehler < highscore) {
-                    highscore = zaehler;
+                if (globalZaehler < globalHighscore) {
+                    globalHighscore = globalZaehler;
                     setHighScoreText();
-                    PlayerPrefs.SetInt("GesagtHighscore", highscore);
+                    PlayerPrefs.SetInt("GesagtHighscore", globalHighscore);
                 }
 
                 // Teleportiere Spieler vor ein Schild mit der Gesamtübersicht und gib ihm 
@@ -144,11 +128,11 @@ public class Schlagzaehler : MonoBehaviour
 
 
     private void setZaehlerText() {
-        zaehlerText.text = "Gesamtschläge: " + zaehler;
+        zaehlerText.text = "Gesamtschläge: " + globalZaehler;
     }
 
     private void setHighScoreText() {
-        if (highscore < 0) {
+        if (globalHighscore < 0) {
             highScoreText.text = "Highscore: " + highScoreText;
         } else {
             highScoreText.text = "Highscore: none";
