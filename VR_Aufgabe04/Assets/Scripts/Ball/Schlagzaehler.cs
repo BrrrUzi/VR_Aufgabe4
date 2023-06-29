@@ -61,6 +61,10 @@ public class Schlagzaehler : MonoBehaviour
             bahnen[i] = bahn;
         }
 
+        Bahn b = bahnen[1];
+        b.bahnOrigin = new Vector3(-25.27F, 0.35F, 23.88F);
+        bahnen[1] = b;
+
         // Befülle origins mit den jeweiligen Startpositionen des Balls.
         // ...                                                                                                                  // ToDo
 
@@ -78,6 +82,7 @@ public class Schlagzaehler : MonoBehaviour
 
         // Teleport Ball zur ersten Bahn
         transform.position = bahnen[1].bahnOrigin;
+        currentBahn++;
     }
 
     // Update is called once per frame
@@ -85,7 +90,7 @@ public class Schlagzaehler : MonoBehaviour
     {
         
         if (rb.velocity.magnitude > 0) {
-            Debug.Log("is Moving ...");
+            //Debug.Log("is Moving ...");
         }
     }
 
@@ -105,6 +110,9 @@ public class Schlagzaehler : MonoBehaviour
             // ...                                                                                                              // ToDo
         }
         else if (col.gameObject.CompareTag("Loch")) {
+
+            Debug.Log("Loch getroffen");
+
             // Setze ggf. den Highscore neu
             bahnen[currentBahn].schild.updateHighscore();
 
@@ -128,6 +136,7 @@ public class Schlagzaehler : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Grass")) {
             // Reset ball to current startpoint
+            rb.velocity = new Vector3(0, 0, 0);
             transform.position = bahnen[currentBahn].bahnOrigin;
         }
     }

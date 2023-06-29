@@ -31,7 +31,7 @@ public class BahnSchild : MonoBehaviour
     }
 
     public void updateHighscore() {
-        if (schlaege < highscore) {
+        if (schlaege < highscore || highscore == 0) {
             highscore = schlaege;
             setHighscoreText();
             storeHighscore();
