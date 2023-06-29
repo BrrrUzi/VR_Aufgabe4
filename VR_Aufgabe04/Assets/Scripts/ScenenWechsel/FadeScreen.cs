@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class FadeScreen : MonoBehaviour
 {
@@ -8,25 +9,30 @@ public class FadeScreen : MonoBehaviour
     public float fadeDuration = 2;
     public Color fadeColor;
     private Renderer rend;
-
+    public Vector3 dummy;
 
     void Start()
     {
+       
         rend = GetComponent<Renderer>();
         if(fadeOnStart )
-        {
+        {   
             FadeIn();
         }
     }
 
     public void FadeIn()
     {
+   
         Fade(1, 0);
+        
     }
 
     public void FadeOut()
     {
+        this.transform.position = dummy;
         Fade(0, 1);
+
     }
 
 
@@ -50,5 +56,7 @@ public class FadeScreen : MonoBehaviour
         Color newColor2 = fadeColor;
         newColor2.a = alphaOut;
         rend.material.SetColor("_Color", newColor2);
+        dummy = this.transform.position;
+        this.transform.position = new Vector3 (0f, -1f, 0f);
     }
 }
