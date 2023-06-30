@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7676078758008020502}
   - component: {fileID: 3208007163260730793}
   m_Layer: 0
-  m_Name: "HighscoreZ\xE4hler (2)"
+  m_Name: Highscorezaehler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,8 +25,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627646014691488895}
-  m_LocalRotation: {x: 0.52671975, y: -0.4717694, z: -0.4717694, w: 0.52671975}
-  m_LocalPosition: {x: 0, y: 0, z: -0.559}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0143}
   m_LocalScale: {x: 0.020468967, y: 0.11270656, z: 0.38978747}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -35,9 +35,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01, y: 0.0088}
+  m_AnchoredPosition: {x: 0.013, y: 0.0088}
   m_SizeDelta: {x: 21.4, y: 4.85}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!23 &7676078758008020502
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -109,8 +109,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4290630122
+  m_fontColor: {r: 0.91764706, g: 0.81960785, b: 0.7411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
-  m_fontSizeBase: 1.5
+  m_fontSize: 1.1
+  m_fontSizeBase: 1.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 18.065231, w: 4.343261}
+  m_margin: {x: 0, y: 0.17, z: 20.53, w: 4.5}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 7223045468490639853}
   - component: {fileID: 7223045468490639852}
   m_Layer: 0
-  m_Name: "Schl\xE4geZ\xE4hler (1)"
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,8 +197,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7223045468490639854}
-  m_LocalRotation: {x: 0.5267197, y: -0.47176945, z: -0.47176945, w: 0.5267197}
-  m_LocalPosition: {x: 0, y: 0, z: -0.508}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0283}
   m_LocalScale: {x: 0.02, y: 0.11012431, z: 0.38085735}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -207,9 +207,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01, y: 0.0088}
+  m_AnchoredPosition: {x: 0.013, y: 0.0088}
   m_SizeDelta: {x: 21.4, y: 4.85}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!23 &7223045468490639853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -281,8 +281,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4290630122
+  m_fontColor: {r: 0.91764706, g: 0.81960785, b: 0.7411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 5
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 18.065231, w: 4.343261}
+  m_margin: {x: 0, y: 0.17, z: 20.52, w: 4.5}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 7223045469123356223}
   - component: {fileID: 7223045469123356222}
   m_Layer: 0
-  m_Name: "HighscoreZ\xE4hler (1)"
+  m_Name: Schlagzaehler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,8 +369,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7223045469123356224}
-  m_LocalRotation: {x: 0.52671975, y: -0.4717694, z: -0.4717694, w: 0.52671975}
-  m_LocalPosition: {x: 0, y: 0, z: -0.539}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0068}
   m_LocalScale: {x: 0.020468967, y: 0.11270656, z: 0.38978747}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -379,9 +379,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01, y: 0.0088}
+  m_AnchoredPosition: {x: 0.013, y: 0.0088}
   m_SizeDelta: {x: 21.4, y: 4.85}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!23 &7223045469123356223
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -453,8 +453,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4290630122
+  m_fontColor: {r: 0.91764706, g: 0.81960785, b: 0.7411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -471,8 +471,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
-  m_fontSizeBase: 1.5
+  m_fontSize: 1.1
+  m_fontSizeBase: 1.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 18.065231, w: 4.343261}
+  m_margin: {x: 0, y: 0.17, z: 20.53, w: 4.5016575}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -527,6 +527,7 @@ GameObject:
   - component: {fileID: 7185441427827441433}
   - component: {fileID: 6059605933649604796}
   - component: {fileID: 8357832309702411382}
+  - component: {fileID: 5749181688563165504}
   m_Layer: 0
   m_Name: 'BahnSchild '
   m_TagString: Untagged
@@ -542,9 +543,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7564921766380299683}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -13.704, y: 0.75, z: 29.441}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4050037, y: 50.0111, z: 8.872598}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7223045468490639855}
   - {fileID: 7223045469123356225}
@@ -602,3 +603,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5749181688563165504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7564921766380299683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc94ca2353274a0c9e4e950e7f0a257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
