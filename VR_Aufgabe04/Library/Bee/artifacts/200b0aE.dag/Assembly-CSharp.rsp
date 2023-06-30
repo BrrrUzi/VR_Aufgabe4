@@ -374,6 +374,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/Scripts/Bahn/Bahn.cs"
 "Assets/Scripts/Bahn/BahnSchild.cs"
+"Assets/Scripts/Ball/ClubHead.cs"
 "Assets/Scripts/Ball/Schlagzaehler.cs"
 "Assets/Scripts/OldScripts/Bahn1.cs"
 "Assets/Scripts/OldScripts/BallController.cs"

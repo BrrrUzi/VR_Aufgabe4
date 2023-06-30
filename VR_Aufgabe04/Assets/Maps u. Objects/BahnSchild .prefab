@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 7185441427827441433}
   - component: {fileID: 6059605933649604796}
   - component: {fileID: 8357832309702411382}
-  - component: {fileID: 5749181688563165504}
+  - component: {fileID: 2553892873479014275}
   m_Layer: 0
   m_Name: 'BahnSchild '
   m_TagString: Untagged
@@ -544,7 +544,7 @@ Transform:
   m_GameObject: {fileID: 7564921766380299683}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4050037, y: 50.0111, z: 8.872598}
+  m_LocalScale: {x: 0.014050034, y: 0.5001109, z: 0.08872596}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7223045468490639855}
@@ -603,7 +603,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5749181688563165504
+--- !u!114 &2553892873479014275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

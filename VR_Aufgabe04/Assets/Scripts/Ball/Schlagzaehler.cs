@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.UI;
+using UnityEngine;
 
 
 public class Schlagzaehler : MonoBehaviour
@@ -77,12 +81,17 @@ public class Schlagzaehler : MonoBehaviour
             //Debug.Log("is Moving ...");
         }
     }
-
+    /*private void OnTriggerEnter(Collider other){
+        if (other.tag == "Club"){
+            GetComponent<Rigidbody>().velocity = other.GetComponent<ClubHead>().getVelocity() * 1.25F;
+        }
+    }*/
     private void OnCollisionEnter(Collision col) {
+
         if (col.gameObject.CompareTag("Club")) {
             // Spiele den Schlagsound ab
             schlagSound.Play();
-            
+        
             // Zähle einen neuen Schlag auf dem Schild mit der Gesamtübersicht
             globalZaehler++;
             setZaehlerText();

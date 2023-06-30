@@ -19,7 +19,15 @@ public class Bahn : MonoBehaviour
     {
         // Fülle globale Variablen
         bahnOrigin = transform.position;
-        schild = transform.GetChild(0).gameObject.GetComponent<BahnSchild>();
+        //schild = transform.GetChild(1).gameObject.GetComponent<BahnSchild>();
+        int count = 0;
+        while (count < transform.childCount) {
+            if (transform.GetChild(count).gameObject.GetComponent<BahnSchild>() != null) {
+                schild = transform.GetChild(count).gameObject.GetComponent<BahnSchild>();
+                break;
+            }
+            count++;
+        }
     }
 
     // Update is called once per frame
