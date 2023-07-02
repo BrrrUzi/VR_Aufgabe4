@@ -1,0 +1,533 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Enterprise' Language: 'de' Physical Memory: 32718 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+G:\Unity\2021.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+G:/Unity/Unity_Projekte/VR-Aufgabe_4/VR_Aufgabe4/VR_Aufgabe04
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+59873
+Successfully changed project path to: G:/Unity/Unity_Projekte/VR-Aufgabe_4/VR_Aufgabe4/VR_Aufgabe04
+G:/Unity/Unity_Projekte/VR-Aufgabe_4/VR_Aufgabe4/VR_Aufgabe04
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10516] Host "[IP] 169.254.198.68 [Port] 0 [Flags] 2 [Guid] 1079197744 [EditorId] 1079197744 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-515Q5KF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10516] Host "[IP] 169.254.198.68 [Port] 0 [Flags] 2 [Guid] 1079197744 [EditorId] 1079197744 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-515Q5KF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 84.65 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path G:/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Unity/Unity_Projekte/VR-Aufgabe_4/VR_Aufgabe4/VR_Aufgabe04/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6600 XT (ID=0x73ff)
+    Vendor:   ATI
+    VRAM:     8147 MB
+    Driver:   31.0.12027.9001
+Initialize mono
+Mono path[0] = 'G:/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'G:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'G:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: G:/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: G:/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008808 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 78.74 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.647 seconds
+Domain Reload Profiling:
+	ReloadAssembly (648ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (432ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (109ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005493 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image G:\Unity\Unity_Projekte\VR-Aufgabe_4\VR_Aufgabe4\VR_Aufgabe04\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image G:\Unity\Unity_Projekte\VR-Aufgabe_4\VR_Aufgabe4\VR_Aufgabe04\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 85.72 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.243 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1243ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (978ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (269ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.35 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4464 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (78.0 KB). Loaded Objects now: 4953.
+Memory consumption went from 178.4 MB to 178.3 MB.
+Total: 3.633400 ms (FindLiveObjects: 0.470800 ms CreateObjectMapping: 0.125300 ms MarkObjects: 2.909800 ms  DeleteObjects: 0.126500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 383675.206568 seconds.
+  path: Assets/Maps u. Objects/BahnM6.fbx
+  artifactKey: Guid(9120fa2c2f674ea4a86c97eccacf77a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnM6.fbx using Guid(9120fa2c2f674ea4a86c97eccacf77a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cecf269640183f59a8ffe51f7909750a') in 0.225348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track4/Track4Boundary.png
+  artifactKey: Guid(83e4716505cfb434393ff2c2bd5f13fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track4/Track4Boundary.png using Guid(83e4716505cfb434393ff2c2bd5f13fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2fe63d972dd3ec296ea3b434bafe49') in 0.037154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Maps u. Objects/BahnM8.fbx
+  artifactKey: Guid(e13daf19bbefdff43b24d0d915029af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnM8.fbx using Guid(e13daf19bbefdff43b24d0d915029af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d4f3354cf12feb0ade7525c30ba1bd') in 0.067036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Maps u. Objects/Bahnen
+  artifactKey: Guid(a9bf2adf1f2ae4f6a8cace8d66ace6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen using Guid(a9bf2adf1f2ae4f6a8cace8d66ace6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc17c411d346e0c458999b403646f9b7') in 0.011907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Maps u. Objects/BahnF3.fbx
+  artifactKey: Guid(f8ee3b2c641d52847a2dc4bd36a15305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnF3.fbx using Guid(f8ee3b2c641d52847a2dc4bd36a15305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523f4cb76ba0087adf3ef29017dda9bc') in 0.048631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/BahnF5.fbx
+  artifactKey: Guid(60d9d9280968fc14b9dd07dd4f37d443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnF5.fbx using Guid(60d9d9280968fc14b9dd07dd4f37d443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616d4204cc5a90b15ca00afa4bd2f4fb') in 0.037011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Maps u. Objects/BahnM13.fbx
+  artifactKey: Guid(4586508feafe1ab4fa0ec4b9b4965706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnM13.fbx using Guid(4586508feafe1ab4fa0ec4b9b4965706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efef6b6b99f73f27bc8d5116238d23ad') in 0.041229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Maps u. Objects/BahnF4.fbx
+  artifactKey: Guid(bf287051223af8340b6d320aa9f204fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnF4.fbx using Guid(bf287051223af8340b6d320aa9f204fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b237f8efc6f47382c01065556be9ec8') in 0.031828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Maps u. Objects/sign.fbx
+  artifactKey: Guid(d15732fdd8c40463b949a497710b9627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/sign.fbx using Guid(d15732fdd8c40463b949a497710b9627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ae9c992d3c64232e73a503761b81bd') in 0.131597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Maps u. Objects/ball.fbx
+  artifactKey: Guid(28ada4110b43b451990715cb5b6f1847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/ball.fbx using Guid(28ada4110b43b451990715cb5b6f1847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e11579d8e3bdd473f32b1928a67caa1') in 0.028917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Maps u. Objects/BahnSchild .prefab
+  artifactKey: Guid(995477f0feeeda046a2f40f9faed72fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnSchild .prefab using Guid(995477f0feeeda046a2f40f9faed72fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd844098f1dd13bb52791952373eb4dd9') in 0.137183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Maps u. Objects/BahnM7.fbx
+  artifactKey: Guid(57c0b84d9a2e14e4f874e800ca3ede59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnM7.fbx using Guid(57c0b84d9a2e14e4f874e800ca3ede59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0175811586ee7624e12ab561b4393501') in 0.042815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Maps u. Objects/BahnF1.fbx
+  artifactKey: Guid(1756b28dae035c0419ea7ca2a054c57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnF1.fbx using Guid(1756b28dae035c0419ea7ca2a054c57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7810da31cc29dab4f50988b7483c1f64') in 0.032939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track4/Track4.fbx
+  artifactKey: Guid(f852e541fda314666a6cbd7c5aa5b851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track4/Track4.fbx using Guid(f852e541fda314666a6cbd7c5aa5b851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971cd6b5b02c2b564614431ab798f5a8') in 0.041050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Maps u. Objects/BahnM1.fbx
+  artifactKey: Guid(074893202b78b7f448533dda3e1623e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/BahnM1.fbx using Guid(074893202b78b7f448533dda3e1623e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bed5b2fd050dc94617a882617fec61a') in 0.044625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Maps u. Objects/Golfschlager.fbx
+  artifactKey: Guid(9a0c8a5384f3046a78241e668a94b0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Golfschlager.fbx using Guid(9a0c8a5384f3046a78241e668a94b0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5034c9271254ffa7808fac882ab50a88') in 0.043942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track4/Track4Roughness.png
+  artifactKey: Guid(b29f2539a36384dfc8d0b40fd10779d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track4/Track4Roughness.png using Guid(b29f2539a36384dfc8d0b40fd10779d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb23cafd36997e24f1bb0a75b5a22297') in 0.024475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.431423 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track4/Materials/Track_ColorMap.mat
+  artifactKey: Guid(3a05813f14cc720438aef25f688ee639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track4/Materials/Track_ColorMap.mat using Guid(3a05813f14cc720438aef25f688ee639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee6ccb87c2f306e10c6c7d936881aca') in 0.036157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 305.457891 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track5/Track5_Albedo.png
+  artifactKey: Guid(3dbaf879aee1c43a2905018c232cdba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track5/Track5_Albedo.png using Guid(3dbaf879aee1c43a2905018c232cdba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4d524626389b41a1610bb924a79d46') in 0.024326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track5/Track5_Roughness.png
+  artifactKey: Guid(848f28d8051184b83b57a2f6f3ccdbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track5/Track5_Roughness.png using Guid(848f28d8051184b83b57a2f6f3ccdbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8eee478512724b02ec237d0f94c994') in 0.030007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 146.731590 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track6/Track6_Albedo.png
+  artifactKey: Guid(0258b5a53fcbd44c9a704d2c01276955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track6/Track6_Albedo.png using Guid(0258b5a53fcbd44c9a704d2c01276955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b922cadf3c3a71e9ea859ae167a7f65') in 0.027821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track6/Track6_Bande_Roughness.png
+  artifactKey: Guid(d80412523ce9a42f2b53280f52298d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track6/Track6_Bande_Roughness.png using Guid(d80412523ce9a42f2b53280f52298d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c761fe65650628451861d987b888638') in 0.026190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.992888 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track7/Track7Boundary.png
+  artifactKey: Guid(8119ef6d9223f4efa98beb0061d819bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track7/Track7Boundary.png using Guid(8119ef6d9223f4efa98beb0061d819bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ad0c09041abc9394573a68f0ae2203') in 0.035306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track7/Track7Extra.png
+  artifactKey: Guid(66e1691bc94c54e5f83e2d846b60c12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track7/Track7Extra.png using Guid(66e1691bc94c54e5f83e2d846b60c12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc2c5ea9ca8a9e2e20e2d33c0c20cd9') in 0.031041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track7/Track7Roughness.png
+  artifactKey: Guid(cfae4d9d2b46e4e17af1914b096126f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track7/Track7Roughness.png using Guid(cfae4d9d2b46e4e17af1914b096126f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e7787b843ba3cfa509152b8178701d') in 0.027336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.896746 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track8/Track8Boundary.png
+  artifactKey: Guid(a1a769fb9423d465f956fa58358bc0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track8/Track8Boundary.png using Guid(a1a769fb9423d465f956fa58358bc0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e069dc11a5f6fd5a34e433139eeb193a') in 0.037289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track8/Track8Diffuse.png
+  artifactKey: Guid(ab8f1d8124f9d4de6ab2b12d26748dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track8/Track8Diffuse.png using Guid(ab8f1d8124f9d4de6ab2b12d26748dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2dfa9611e3b2d84e4fea2be5a8c43eb') in 0.028516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track8/Track8Extra.png
+  artifactKey: Guid(2e0c27b3eb00543a18fd7e5fd3d6908e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track8/Track8Extra.png using Guid(2e0c27b3eb00543a18fd7e5fd3d6908e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47cff9cfcc7be4cb784aba95ec8a966') in 0.027821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.691041 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track9/Track9_Albedo.png
+  artifactKey: Guid(82ed59bad76954e038654c82f16083e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track9/Track9_Albedo.png using Guid(82ed59bad76954e038654c82f16083e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea165850c6f2413312e79fa0a425a07') in 0.028911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track9/Track9_Bande_Roughness.png
+  artifactKey: Guid(edb331e1223164d9fbeb69efba5a29bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track9/Track9_Bande_Roughness.png using Guid(edb331e1223164d9fbeb69efba5a29bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20b4b60a4d306f07610aae1b8e05453') in 0.027118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track9/Track9_Roughness.png
+  artifactKey: Guid(37ef1020146c74cb7af8cc388c38522a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track9/Track9_Roughness.png using Guid(37ef1020146c74cb7af8cc388c38522a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b21e73469ae981c36e3d0d5b0d882ab') in 0.032825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 300.930888 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track10/Track10Boundary.png
+  artifactKey: Guid(49cca0b75e1b04498afb492ba9db85de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track10/Track10Boundary.png using Guid(49cca0b75e1b04498afb492ba9db85de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28f255d27634a8b3dadcd6f14bf5f84') in 0.023287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track10/Track10EdgeExtras.png
+  artifactKey: Guid(753ad9b893a1f4c06950c206008aba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track10/Track10EdgeExtras.png using Guid(753ad9b893a1f4c06950c206008aba06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dad3fc0885a19e0c71e26635523f91f') in 0.029287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track10/Track10Diffuse.png
+  artifactKey: Guid(fa8ebc718959741c89649503eb08c77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track10/Track10Diffuse.png using Guid(fa8ebc718959741c89649503eb08c77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74de8219c50182940787f25b1e835aaf') in 0.029873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.260719 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track11/Track11Boundary.png
+  artifactKey: Guid(2e553318a4af04de0914a104ad905a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track11/Track11Boundary.png using Guid(2e553318a4af04de0914a104ad905a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f01f4c577777e3edd0a0354ab3d7343') in 0.024625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track11/Track11Diffuse.png
+  artifactKey: Guid(3f355771e58454286b369d4efe82a6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track11/Track11Diffuse.png using Guid(3f355771e58454286b369d4efe82a6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d43b9918d6037219af7a50fbc63509') in 0.026038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track11/Track11Extra.png
+  artifactKey: Guid(1431c369b9beb4dca8a76d93005f9abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track11/Track11Extra.png using Guid(1431c369b9beb4dca8a76d93005f9abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ccf0a1fee16d3ca1fbfde0b10a876a') in 0.023856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.434611 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track12/Track12Boundary.png
+  artifactKey: Guid(e2f9a997a09b04a31b1205cf4a00e291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track12/Track12Boundary.png using Guid(e2f9a997a09b04a31b1205cf4a00e291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4c614d514af7176aa94f2747624419') in 0.028858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track12/Track12Roughness.png
+  artifactKey: Guid(cf05dc84d2fe242a49567a2cd10c2a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track12/Track12Roughness.png using Guid(cf05dc84d2fe242a49567a2cd10c2a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902f292ea2a997419de00fd8395d08d4') in 0.027111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.947536 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track13/Track13Boundary.png
+  artifactKey: Guid(41f32d84becbb4eb1b7cd2948e9d5bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track13/Track13Boundary.png using Guid(41f32d84becbb4eb1b7cd2948e9d5bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2835592ee0b9dd512745839cbcf53edd') in 0.029256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track13/Track13Diffuse.png
+  artifactKey: Guid(3ca0f02477d794ca0b183b21e2c396d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track13/Track13Diffuse.png using Guid(3ca0f02477d794ca0b183b21e2c396d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6311ed42b004879b3193251cf7ad53e1') in 0.028954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track13/Track13Roughness.png
+  artifactKey: Guid(82f5a85fe18574a719d977a999c7972d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track13/Track13Roughness.png using Guid(82f5a85fe18574a719d977a999c7972d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c96c330bdedf08f4a23713d9a694de9') in 0.029733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.591977 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track14/Track14Boundary.png
+  artifactKey: Guid(d64cdd85175404512a2dd383d6121de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track14/Track14Boundary.png using Guid(d64cdd85175404512a2dd383d6121de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74571347c58d2663ea9ff45e0758fdb4') in 0.030576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track14/Track14Diffuse.png
+  artifactKey: Guid(503cda26880b14014941376587955e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track14/Track14Diffuse.png using Guid(503cda26880b14014941376587955e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39ed0aa12b0a645747c483be9120b00') in 0.033966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track14/Track14Roughness.png
+  artifactKey: Guid(fccb0c92e88534b7484fcb7773dab7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track14/Track14Roughness.png using Guid(fccb0c92e88534b7484fcb7773dab7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3254c3971512dee353d270231f9181b') in 0.028298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.906867 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track14/Materials/Track14Diffuse.mat
+  artifactKey: Guid(7aca98fca0e3d2342934fa86fa550cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track14/Materials/Track14Diffuse.mat using Guid(7aca98fca0e3d2342934fa86fa550cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278af8a4191b6d60d0d4550f19ef3d52') in 0.024187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track14/Materials/Track14Extra.mat
+  artifactKey: Guid(9be8278886a88d34692d4f9a98d86d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track14/Materials/Track14Extra.mat using Guid(9be8278886a88d34692d4f9a98d86d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66aaf42f6280c95e1f12d2a994ac6e2b') in 0.028002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.742314 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track15/Track15Boundary.png
+  artifactKey: Guid(37c5e5eda0a9a41df8c6957fd3c7724e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track15/Track15Boundary.png using Guid(37c5e5eda0a9a41df8c6957fd3c7724e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358740621593de7bb9320ff8998ac622') in 0.032151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track15/Track15Roughness.png
+  artifactKey: Guid(eeafc3f7590e2418196aff715653c54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track15/Track15Roughness.png using Guid(eeafc3f7590e2418196aff715653c54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4f5f60b82656f120f3f3e4c40dbd39') in 0.033641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.169725 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track16/Track16Boundary.png
+  artifactKey: Guid(6f6c913fd297346b79cd14ea6ea750aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track16/Track16Boundary.png using Guid(6f6c913fd297346b79cd14ea6ea750aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb39f66010a16f88006a02a2ef8484cc') in 0.038913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track16/Track16Extra.png
+  artifactKey: Guid(8005b557426b448e99e96ff2e1ca52a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track16/Track16Extra.png using Guid(8005b557426b448e99e96ff2e1ca52a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3c3c327afba3f55467b3486550f127') in 0.025446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track16/Track16Roughness.png
+  artifactKey: Guid(858b5f0cac69e4f69be1326a5f3d6b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track16/Track16Roughness.png using Guid(858b5f0cac69e4f69be1326a5f3d6b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e4410d1a8ce2ef5cb25565028fb05d') in 0.025781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.642747 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track17/Track17Boundary.png
+  artifactKey: Guid(c886783ad98d545f190475bd38c9bff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track17/Track17Boundary.png using Guid(c886783ad98d545f190475bd38c9bff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c2c853d62a6b446bbe6931c2158864') in 0.030063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track17/Track17Roughness.png
+  artifactKey: Guid(529929657490540ffb51af8f67809b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track17/Track17Roughness.png using Guid(529929657490540ffb51af8f67809b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5247388509feb07ba574a6a966598f29') in 0.036196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.495096 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track18/Track18Boundarypng.png
+  artifactKey: Guid(9d00fc8eedbd5465fb726ea1cdc7307b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track18/Track18Boundarypng.png using Guid(9d00fc8eedbd5465fb726ea1cdc7307b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397298c56637250c702789b96b3e16b6') in 0.026399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track18/Track18Roughness.png
+  artifactKey: Guid(3654ca647a3bf4e4eb12fd7401b197a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track18/Track18Roughness.png using Guid(3654ca647a3bf4e4eb12fd7401b197a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8b56f0c0513c2fb5e3c6a6e4dae8e2') in 0.029623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.428951 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track18/Materials/Track_ColorMap.mat
+  artifactKey: Guid(19121f09b3fcf7447b6c22da481dd48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track18/Materials/Track_ColorMap.mat using Guid(19121f09b3fcf7447b6c22da481dd48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29a342e91717344f1af3036b2eccbd2') in 0.038026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.228419 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track1/Track1_Boundary_RoughnessMap.png
+  artifactKey: Guid(00519778a9b8d4293ad70b666e0a64d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track1/Track1_Boundary_RoughnessMap.png using Guid(00519778a9b8d4293ad70b666e0a64d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe210d8f45ea6b2eebe6995f49dab93') in 0.028099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track1/TrackAlbedo.png
+  artifactKey: Guid(4bfb34a2fd725413385dcf503ccb98c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track1/TrackAlbedo.png using Guid(4bfb34a2fd725413385dcf503ccb98c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f590168b47b090d3c6708413c4b7f7dc') in 0.030609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track1/Track1_Narrowing_RoughnessMap.png
+  artifactKey: Guid(869745a06720f4bff82b3a680c791a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track1/Track1_Narrowing_RoughnessMap.png using Guid(869745a06720f4bff82b3a680c791a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd659de16d20bd999369f40b0168c45c6') in 0.026419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Maps u. Objects/Bahnen/Track1/Track1_Looping_RoughnessMap.png
+  artifactKey: Guid(fbde4b60a8c814702ae0b87b8c151832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps u. Objects/Bahnen/Track1/Track1_Looping_RoughnessMap.png using Guid(fbde4b60a8c814702ae0b87b8c151832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6da843fd1bd1fe7a4918a139d3725c5') in 0.028409 seconds 

@@ -90,6 +90,7 @@ public class Schlagzaehler : MonoBehaviour
 
         if (col.gameObject.CompareTag("Club")) {
             // Spiele den Schlagsound ab
+            Debug.Log("Why");
             schlagSound.Play();
         
             // Zähle einen neuen Schlag auf dem Schild mit der Gesamtübersicht

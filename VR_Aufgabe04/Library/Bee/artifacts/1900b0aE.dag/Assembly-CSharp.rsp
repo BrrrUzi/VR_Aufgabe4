@@ -388,6 +388,7 @@
 "Assets/Scripts/OldScripts/Portale/Teleporter1.cs"
 "Assets/Scripts/OldScripts/ScriptGroupController.cs"
 "Assets/Scripts/Player/PlayerTeleport.cs"
+"Assets/Scripts/Quit.cs"
 "Assets/Scripts/ScenenWechsel/FadeScreen.cs"
 "Assets/Scripts/ScenenWechsel/SceneTransitionManager.cs"
 -langversion:9.0
