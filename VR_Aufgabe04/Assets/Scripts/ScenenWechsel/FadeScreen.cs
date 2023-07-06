@@ -10,6 +10,7 @@ public class FadeScreen : MonoBehaviour
     public Color fadeColor;
     private Renderer rend;
     public Vector3 dummy;
+    public float count1 = 0;
 
     void Start()
     {
@@ -18,12 +19,13 @@ public class FadeScreen : MonoBehaviour
         if(fadeOnStart )
         {   
             FadeIn();
+            this.transform.position = new Vector3(0f, -1f, 0f);
         }
     }
 
     public void FadeIn()
     {
-   
+        
         Fade(1, 0);
         
     }
@@ -57,6 +59,5 @@ public class FadeScreen : MonoBehaviour
         newColor2.a = alphaOut;
         rend.material.SetColor("_Color", newColor2);
         dummy = this.transform.position;
-        this.transform.position = new Vector3 (0f, -1f, 0f);
     }
 }
