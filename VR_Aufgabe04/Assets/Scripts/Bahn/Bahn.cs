@@ -18,7 +18,7 @@ public class Bahn : MonoBehaviour
     void Start()
     {
         // Fülle globale Variablen
-        bahnOrigin = transform.position;
+        bahnOrigin = transform.position + new Vector3(0, 0.2f, 0.3f);
         //schild = transform.GetChild(1).gameObject.GetComponent<BahnSchild>();
         int count = 0;
         while (count < transform.childCount) {

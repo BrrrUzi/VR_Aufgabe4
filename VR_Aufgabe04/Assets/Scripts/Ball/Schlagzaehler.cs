@@ -47,13 +47,16 @@ public class Schlagzaehler : MonoBehaviour
     // Rigidbody des Balls
     private Rigidbody rb;
 
+    bool hasCollided = false;
+
+    Collision col;
+
+    Vector3 origin;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Bahn b = bahnen[0];
-        b.bahnOrigin = new Vector3(-25.27F, 0.35F, 23.88F);
-        bahnen[0] = b;
 
         // Befülle origins mit den jeweiligen Startpositionen des Balls.
         // ...                                                                                                                  // ToDo
@@ -74,12 +77,24 @@ public class Schlagzaehler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         if (rb.velocity.magnitude > 0) {
             //Debug.Log("is Moving ...");
         }
+
+        if (hasCollided && rb.velocity.magnitude == 0) 
+        {
+            col.gameObject.GetComponent<Collider>().isTrigger = false;
+        }
+        /*if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gameObject.transform.position = origin;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+        */
     }
     /*private void OnTriggerEnter(Collider other){
         if (other.tag == "Club"){
@@ -101,7 +116,13 @@ public class Schlagzaehler : MonoBehaviour
             bahnen[currentBahn].schild.addSchlag();
 
             // Wenn maximale Schläge getätig wurden, irgendwas machen
-            // ...                                                                                                              // ToDo
+            // ...                                           
+
+            this.col = col;
+            col.gameObject.GetComponent<Collider>().isTrigger = true;
+            hasCollided = true;
+            Vector3 diff = (transform.position - col.transform.position);
+            rb.velocity = diff.normalized * col.gameObject.GetComponent<ClubHead>().getVelocity().magnitude * 2F;
         }
         else if (col.gameObject.CompareTag("Loch")) {
 
