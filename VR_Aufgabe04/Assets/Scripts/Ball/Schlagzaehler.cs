@@ -6,8 +6,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UI;
-using UnityEngine;
-
+using Unity.XR.CoreUtils;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Schlagzaehler : MonoBehaviour
 {
@@ -27,6 +27,9 @@ public class Schlagzaehler : MonoBehaviour
     // Liste aller Bahnen des Parcours
     [SerializeField]
     public Bahn[] bahnen;
+
+    [SerializeField]
+    public XROrigin player;
 
 
     // Zähler aller Schläge auf dem Parcours seit Start des Spiels
@@ -49,15 +52,16 @@ public class Schlagzaehler : MonoBehaviour
 
     bool hasCollided = false;
 
-    Collision col;
+    GameObject club;
 
     Vector3 origin;
+
+    Color originalColor;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
         // Befülle origins mit den jeweiligen Startpositionen des Balls.
         // ...                                                                                                                  // ToDo
 
@@ -70,23 +74,30 @@ public class Schlagzaehler : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
 
-
+        originalColor = GetComponent<Renderer>().material.color;
 
         // Teleport Ball zur ersten Bahn
-        transform.position = bahnen[0].bahnOrigin;
+        teleportBall();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        //rb.velocity *= 0.9F;
         if (rb.velocity.magnitude > 0) {
             //Debug.Log("is Moving ...");
         }
 
-        if (hasCollided && rb.velocity.magnitude == 0) 
+        if (hasCollided && rb.velocity.magnitude < 0.05F) 
         {
-            col.gameObject.GetComponent<Collider>().isTrigger = false;
+            club.GetComponent<Collider>().isTrigger = false;
+            GetComponent<Renderer>().material.color = originalColor;
+
+            if (bahnen[currentBahn].schild.getSchlaege() == 15) {
+                currentBahn++;
+                teleportBall();
+                teleportPlayer();
+            }
         }
         /*if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -105,8 +116,9 @@ public class Schlagzaehler : MonoBehaviour
 
         if (col.gameObject.CompareTag("Club")) {
             // Spiele den Schlagsound ab
-            Debug.Log("Why");
             schlagSound.Play();
+            //xr.SendHapticImpulse(0.7f, 2f);
+            
         
             // Zähle einen neuen Schlag auf dem Schild mit der Gesamtübersicht
             globalZaehler++;
@@ -118,11 +130,12 @@ public class Schlagzaehler : MonoBehaviour
             // Wenn maximale Schläge getätig wurden, irgendwas machen
             // ...                                           
 
-            this.col = col;
-            col.gameObject.GetComponent<Collider>().isTrigger = true;
+            club = col.gameObject;
+            club.GetComponent<Collider>().isTrigger = true;
+            GetComponent<Renderer>().material.color = new Color(0, 0.45F, 1F);
             hasCollided = true;
             Vector3 diff = (transform.position - col.transform.position);
-            rb.velocity = diff.normalized * col.gameObject.GetComponent<ClubHead>().getVelocity().magnitude * 2F;
+            rb.velocity = club.GetComponent<ClubHead>().getVelocity() * 2F;
         }
         else if (col.gameObject.CompareTag("Loch")) {
 
@@ -135,13 +148,15 @@ public class Schlagzaehler : MonoBehaviour
                 currentBahn++;
 
                 // Teleport Ball zur nächsten Bahn
-                transform.position = bahnen[currentBahn].bahnOrigin;
+                teleportBall();
+                teleportPlayer();
             } else {
                 // Setze den Highscore auf dem Schild mit der Gesamtübersich
-                if (globalZaehler < globalHighscore) {
+                 player.transform.position = new Vector3(0, 0, 29);
+                if ((globalZaehler < globalHighscore || globalHighscore == 0) && globalZaehler > 0) {
                     globalHighscore = globalZaehler;
                     setHighScoreText();
-                    PlayerPrefs.SetInt("GesagtHighscore", globalHighscore);
+                    PlayerPrefs.SetInt("GesamtHighscore", globalHighscore);
                 }
 
                 // Teleportiere Spieler vor ein Schild mit der Gesamtübersicht und gib ihm 
@@ -151,9 +166,20 @@ public class Schlagzaehler : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Grass")) {
             // Reset ball to current startpoint
-            rb.velocity = new Vector3(0, 0, 0);
-            transform.position = bahnen[currentBahn].bahnOrigin;
+            teleportBall();
         }
+    }
+
+
+
+    private void teleportBall() {
+        rb.velocity = new Vector3(0, 0, 0);
+        rb.angularVelocity = Vector3.zero;
+        transform.position = bahnen[currentBahn].bahnOrigin;
+    }
+
+    private void teleportPlayer() {
+        player.transform.position = bahnen[currentBahn].playerSpawnPoint;
     }
 
 
@@ -163,8 +189,8 @@ public class Schlagzaehler : MonoBehaviour
     }
 
     private void setHighScoreText() {
-        if (globalHighscore < 0) {
-            highScoreText.text = "Highscore: " + highScoreText;
+        if (globalHighscore > 0) {
+            highScoreText.text = "Highscore: " + globalHighscore;
         } else {
             highScoreText.text = "Highscore: none";
         }

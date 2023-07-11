@@ -11,6 +11,8 @@ public class Bahn : MonoBehaviour
     // Der Ursprung der Bahn
     public Vector3 bahnOrigin;
 
+    public Vector3 playerSpawnPoint;
+
 
 
 
@@ -19,6 +21,7 @@ public class Bahn : MonoBehaviour
     {
         // Fülle globale Variablen
         bahnOrigin = transform.position + new Vector3(0, 0.2f, 0.3f);
+        playerSpawnPoint = transform.position - new Vector3(0, 0, 0.3f);
         //schild = transform.GetChild(1).gameObject.GetComponent<BahnSchild>();
         int count = 0;
         while (count < transform.childCount) {

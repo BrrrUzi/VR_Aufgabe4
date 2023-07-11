@@ -59,6 +59,10 @@ public class BahnSchild : MonoBehaviour
         setSchlaegeText();
     }
 
+    public int getSchlaege() {
+        return schlaege;
+    }
+
     private void setSchlaegeText() {
         schlaegeZaehler.text = "Schläge " + schlaege;
     }

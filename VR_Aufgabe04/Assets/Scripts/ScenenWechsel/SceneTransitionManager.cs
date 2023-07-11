@@ -36,7 +36,7 @@ public class SceneTransitionManager : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         operation.allowSceneActivation = false;
         float timer = 0;
-        while(timer <= fadeScreen.fadeDuration && !operation.isDone)
+        while(timer <= 0 && !operation.isDone)
         {
             timer += Time.deltaTime;
             yield return null;

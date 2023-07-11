@@ -6,7 +6,7 @@ using UnityEngine.SocialPlatforms;
 public class FadeScreen : MonoBehaviour
 {
     public bool fadeOnStart = true;
-    public float fadeDuration = 2;
+    public float fadeDuration = 0;
     public Color fadeColor;
     private Renderer rend;
     public Vector3 dummy;
@@ -49,7 +49,7 @@ public class FadeScreen : MonoBehaviour
         while (timer <= fadeDuration)
         {
             Color newColor = fadeColor;
-            newColor.a = Mathf.Lerp(alphaIn, alphaOut, timer / fadeDuration);
+            newColor.a = Mathf.Lerp(alphaIn, alphaOut, timer / 1);
             rend.material.SetColor("_Color", newColor);
             timer += Time.deltaTime;
             yield return null;
