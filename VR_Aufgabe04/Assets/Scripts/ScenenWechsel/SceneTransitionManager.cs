@@ -7,7 +7,7 @@ public class SceneTransitionManager : MonoBehaviour
 {
     public FadeScreen fadeScreen;
 
-    //Einfache Methode
+    //Einfache Methode für Scenen wechsel
     public void GoToScene(int sceneIndex)
     {
         StartCoroutine(GoToSceneRoutine(sceneIndex));

@@ -15,6 +15,9 @@ public class Schlagzaehler : MonoBehaviour
     // Sound, der abgespielt wird, wenn der Schläger den Ball berührt
     [SerializeField]
     public AudioSource schlagSound;
+    public AudioSource AwwwSound;
+    public AudioSource GetroffenSound;
+    public AudioSource CheerSound;
 
     // Text, der die Gesamtanzahl der bisherigen Schläge auf dieser Bahn seit Start anzeigt
     [SerializeField]
@@ -95,6 +98,7 @@ public class Schlagzaehler : MonoBehaviour
 
             if (bahnen[currentBahn].schild.getSchlaege() == 15) {
                 currentBahn++;
+                AwwwSound.Play();
                 teleportBall();
                 teleportPlayer();
             }
@@ -140,6 +144,7 @@ public class Schlagzaehler : MonoBehaviour
         else if (col.gameObject.CompareTag("Loch")) {
 
             Debug.Log("Loch getroffen");
+            GetroffenSound.Play();
 
             // Setze ggf. den Highscore neu
             bahnen[currentBahn].schild.updateHighscore();
@@ -153,6 +158,7 @@ public class Schlagzaehler : MonoBehaviour
             } else {
                 // Setze den Highscore auf dem Schild mit der Gesamtübersich
                  player.transform.position = new Vector3(0, 0, 29);
+                 CheerSound.Play();
                 if ((globalZaehler < globalHighscore || globalHighscore == 0) && globalZaehler > 0) {
                     globalHighscore = globalZaehler;
                     setHighScoreText();

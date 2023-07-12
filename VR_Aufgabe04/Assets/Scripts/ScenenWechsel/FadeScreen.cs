@@ -45,6 +45,8 @@ public class FadeScreen : MonoBehaviour
 
     public IEnumerator FadeRoutine(float alphaIn, float alphaOut)
     {
+        //Skript mit dem beim Scenenwechsel ein Fadescreen ein und ausgeblendet wird
+        //Ist nicht in benutzung da durch den Screen die Rays der Hände nicht gecastet werden
         float timer = 0;
         while (timer <= fadeDuration)
         {
