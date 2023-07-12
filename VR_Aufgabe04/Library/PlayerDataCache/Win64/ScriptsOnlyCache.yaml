@@ -24,8 +24,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.CoreUtils.dll:
@@ -184,65 +182,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 2200}
+      Script: {instanceID: 1972}
     - Class: 114
-      Script: {instanceID: 2276}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 2452}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 3346}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 3614}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 3770}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4378}
     - Class: 114
-      Script: {instanceID: 4872}
+      Script: {instanceID: 4638}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 4992}
+      Script: {instanceID: 4758}
     - Class: 114
-      Script: {instanceID: 5068}
+      Script: {instanceID: 4834}
     - Class: 114
-      Script: {instanceID: 5428}
+      Script: {instanceID: 5190}
     - Class: 114
-      Script: {instanceID: 5854}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 5970}
+      Script: {instanceID: 5730}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 6072}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 6080}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6508}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 7124}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7270}
     - Class: 114
-      Script: {instanceID: 7712}
+      Script: {instanceID: 7470}
     - Class: 114
-      Script: {instanceID: 8084}
+      Script: {instanceID: 7840}
     - Class: 114
-      Script: {instanceID: 8698}
+      Script: {instanceID: 8454}
     - Class: 114
-      Script: {instanceID: 9646}
+      Script: {instanceID: 9402}
     - Class: 114
-      Script: {instanceID: 10024}
+      Script: {instanceID: 9778}
     - Class: 114
-      Script: {instanceID: 10172}
+      Script: {instanceID: 9926}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10082}
     - Class: 114
-      Script: {instanceID: 10388}
+      Script: {instanceID: 10140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -305,59 +303,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 2200}
+      Script: {instanceID: 1972}
     - Class: 114
-      Script: {instanceID: 2276}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 2728}
+      Script: {instanceID: 2496}
     - Class: 114
-      Script: {instanceID: 3346}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 3614}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 3770}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4632}
     - Class: 114
-      Script: {instanceID: 4872}
+      Script: {instanceID: 4638}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 5068}
+      Script: {instanceID: 4834}
     - Class: 114
-      Script: {instanceID: 5402}
+      Script: {instanceID: 5164}
     - Class: 114
-      Script: {instanceID: 5756}
+      Script: {instanceID: 5516}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 6072}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 6080}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6508}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 7124}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7270}
     - Class: 114
-      Script: {instanceID: 7712}
+      Script: {instanceID: 7470}
     - Class: 114
-      Script: {instanceID: 8084}
+      Script: {instanceID: 7840}
     - Class: 114
-      Script: {instanceID: 8698}
+      Script: {instanceID: 8454}
     - Class: 114
-      Script: {instanceID: 9012}
+      Script: {instanceID: 8768}
     - Class: 114
-      Script: {instanceID: 10024}
+      Script: {instanceID: 9778}
     - Class: 114
-      Script: {instanceID: 10060}
+      Script: {instanceID: 9814}
     - Class: 114
-      Script: {instanceID: 10172}
+      Script: {instanceID: 9926}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10082}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -389,6 +387,12 @@ ScriptsOnlyBuild:
     className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -413,12 +417,6 @@ ScriptsOnlyBuild:
     className: PlayerInput
   - hash:
       serializedVersion: 2
-      Hash: 2b4daf7748547df6df6d01eb8f512442
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
@@ -435,12 +433,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Transformers
     className: XRGeneralGrabTransformer
-  - hash:
-      serializedVersion: 2
-      Hash: 047ab1f0abd8b19bc071da6ebe68e5c8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LineForce
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -503,12 +495,6 @@ ScriptsOnlyBuild:
     className: ActionBasedController
   - hash:
       serializedVersion: 2
-      Hash: 165a2181a10e958cca80975a7576b18e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScriptGroupController
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Transformers
@@ -561,12 +547,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Theme.Primitives
     className: ColorAffordanceThemeDatum
-  - hash:
-      serializedVersion: 2
-      Hash: 97ae053905e372d3ed7c7a20a1580afa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BallController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -899,12 +879,6 @@ ScriptsOnlyBuild:
     className: VariablesAsset
   - hash:
       serializedVersion: 2
-      Hash: 817dcc290596aa8d91e4558918a65886
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraSwitcher
-  - hash:
-      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
@@ -1067,22 +1041,10 @@ ScriptsOnlyBuild:
     className: XRInteractionManager
   - hash:
       serializedVersion: 2
-      Hash: aba7b2852ef61d175dd9602e7723d5e5
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Mask
-  - hash:
-      serializedVersion: 2
       Hash: fb9c864b454c238286d08e8fbf46a31f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputDebuggerWindow
-  - hash:
-      serializedVersion: 2
-      Hash: 88b51da0fe06c9d7c3c411d394e15b64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bahn1
   - hash:
       serializedVersion: 2
       Hash: 9706e27e13ef8b6ca2a6360f0aaade32
@@ -1163,12 +1125,6 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
-      Hash: d46f29631611d96d7bfba701b99a64d8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Portal
-  - hash:
-      serializedVersion: 2
       Hash: 86ba9a8805ac7e04d0f500732865d9f3
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -1205,7 +1161,7 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
-      Hash: c66b2beb047424e84f44b1525e9d72f4
+      Hash: 9222b00d82acc238f2be0b6a742d182d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Schlagzaehler
@@ -1365,12 +1321,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
-  - hash:
-      serializedVersion: 2
-      Hash: 4a4e98db98041680900a57faa5b629e5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BallLinie
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1563,12 +1513,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenXR.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
     className: HTCViveControllerProfile
-  - hash:
-      serializedVersion: 2
-      Hash: 24e632b1a27ffcd80f8859208d380b81
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Teleporter1
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2009,12 +1953,6 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 422eee1fcaea3d21f878c5cce5fad31e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerCam
-  - hash:
-      serializedVersion: 2
       Hash: babc43560c933e12d4eb5786e23cf0cf
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -2113,4 +2051,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SpawnRoom.unity
   - Assets/Scenes/Environment.unity
-  playerPath: "D:/VirtuelleRealit\xE4tUndAnimation Gruppe 1/Golfinity.exe"
+  playerPath: G:/Unity/Unity_Projekte/VR-Aufgabe_4/VR_Aufgabe4/Golfinity runnable
+    12.07.2023/Golfinity.exe

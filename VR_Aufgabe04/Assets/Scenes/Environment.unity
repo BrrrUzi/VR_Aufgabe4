@@ -9203,7 +9203,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909682496}
-  m_Material: {fileID: 13400000, guid: 7029a297ea5194bb3927e92b9486d813, type: 2}
+  m_Material: {fileID: 13400000, guid: 57c2b3c5197b1da4eb5172bbf992c92d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -12940,6 +12940,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 19121f09b3fcf7447b6c22da481dd48c, type: 2}
+    - target: {fileID: 253604111105738746, guid: 2ecc754af9cb4f745ab938818f32d541, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8fe7b74c66c66a344b29e5ced6dec275, type: 2}
     - target: {fileID: 919132149155446097, guid: 2ecc754af9cb4f745ab938818f32d541, type: 3}
       propertyPath: m_Name
       value: Track2
